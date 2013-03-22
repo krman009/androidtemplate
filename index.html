@@ -1,0 +1,137 @@
+<div id="stbar">
+  	<div class="crt">
+			Android OS Template
+		</div>
+		<div id="clock">
+      <span id="liveclock"></span>
+    </div>
+   <div class="pc"><img src="http://3.bp.blogspot.com/-X6fADEZ5Coo/UPLhbQdA20I/AAAAAAAAAQQ/pUKZ20mxT08/s320/bookarcpro_desktop_gallerymain.jpg" height=29px title="Macbook(desktop)" /></div>
+  <div id="abt"><a href="https://facebook.com/krmandaliya" target="_blank">About</a></div>
+		<div id="abt"><a href="https://facebook.com/krmandaliya" target="_blank">Kaushalya Mandaliya</a></div>
+	</div>
+<div class="menu">
+  <ul>
+<center>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">New posts</a></li>
+		<li><a href="#">Our store</a></li>
+		<li><a href="#">About us</a></li>
+		<li><a href="#">Contact us</a></li>
+</center>
+	</ul>
+</div>
+<div class="btwin" align="center">
+  <table cellspacing="20">
+    <tr> 
+      <td> 
+        <div class="post">
+          <h3><a href="#" title="Post title">First Post</a></h3>
+          <div class="main">
+          A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. 
+            <br />
+            <div class="rm">
+              <a href="" title="Full post link">Read More >></a>
+            </div>
+          </div>
+          <h4><a href="#" title="Comments">54 Comments</a></h4>          
+          By <a href="#" title="Comments">Kaushalya Mandaliya</a> On 27th January 2013 at 7:00 am.
+       </div>
+      </td> 
+      <td> 
+        <div class="wid">
+          <h2 style=color:aqua;>
+          Our social network
+          </h2>
+            <div class="im">
+              <a href="#" title="Facebook"><img src="http://4.bp.blogspot.com/-Li-DQXRtaQg/UPaazlBqBYI/AAAAAAAAAl4/t1kltM6o9i0/s1600/fbcntct.png" align="center" /></a>
+              <a href="#" title="Twitter"><img src="http://3.bp.blogspot.com/-UOy0UlLEVg8/UPaIzqTKpvI/AAAAAAAAAlY/OV4wmJhEDnc/s1600/twitter-bird.png" align="center" /></a>
+              <a href="#" title="Google +"><img src="http://3.bp.blogspot.com/-JIs_criBJog/UPaazliCpxI/AAAAAAAAAl8/0SPFLR-Ew2M/s1600/gplus.png" align="center" /></a>
+            </div>
+          </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="post">
+          <h3><a href="#" title="Post title">Second Post</a></h3>
+          <div class="main">
+          A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. 
+            <br />
+            <div class="rm">
+              <a href="" title="Full post link">Read More >></a>
+            </div>
+          </div>
+          <h4><a href="#" title="Comments">84 Comments</a></h4>          
+          By <a href="#" title="Comments">Kaushalya Mandaliya</a> On 27th January 2013 at 7:00 am.
+       </div>
+      </td>
+    </tr>    
+    <tr>
+      <td>
+        <div class="post">
+          <h3><a href="#" title="Post title">Third Post</a></h3>
+          <div class="main">
+          A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. A brown fox jumps over the lazy dog. 
+            <br />
+            <div class="rm">
+              <a href="" title="Full post link">Read More >></a>
+            </div>
+          </div>
+          <h4><a href="#" title="Comments">153 Comments</a></h4>          
+          By <a href="#" title="Comments">Kaushalya Mandaliya</a> On 27th January 2013 at 7:00 am.
+       </div>
+      </td>
+    </tr>
+  </table>
+</div>
+<br />
+<div class="foot">
+  Template based on google's android 2.3(gingerbread) by Kaushalya Mandaliya. © 2013 Kaushalya Mandaliya. Live clock by Javascript Kit.
+</div>
+<script language="JavaScript">
+ <!--
+
+/*
+Upper Corner Live clock script credit: JavaScript Kit (www.javascriptkit.com
+More free scripts here!
+*/
+
+function show5(){
+if (!document.layers&&!document.all&&!document.getElementById)
+return
+
+ var Digital=new Date()
+ var hours=Digital.getHours()
+ var minutes=Digital.getMinutes()
+ var seconds=Digital.getSeconds()
+
+var dn="PM"
+if (hours<12)
+dn="AM"
+if (hours>12)
+hours=hours-12
+if (hours==0)
+hours=12
+
+ if (minutes<=9)
+ minutes="0"+minutes
+ if (seconds<=9)
+ seconds="0"+seconds
+//change font size here to your desire
+myclock="<b>"+hours+":"+minutes+":"
+ +seconds+" "+dn+"</b>"
+if (document.layers){
+document.layers.liveclock.document.write(myclock)
+document.layers.liveclock.document.close()
+}
+else if (document.all)
+liveclock.innerHTML=myclock
+else if (document.getElementById)
+document.getElementById("liveclock").innerHTML=myclock
+setTimeout("show5()",1000)
+ }
+
+
+window.onload=show5
+ //-->
+</script>
