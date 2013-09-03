@@ -5,3 +5,6 @@ androidtemplate
        Just made a android template for website.               
 ***************************************************************
 ***************************************************************
+Preview : http://cdpn.io/qKEzs and another http://codepen.io/kman/pen/bDGyn
+==============
+
