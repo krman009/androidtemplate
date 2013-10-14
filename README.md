@@ -1,4 +1,4 @@
-# androidtemplate
+# Android Template
 
 > Just made a android template for website.    
 
