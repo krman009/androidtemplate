@@ -1,5 +1,5 @@
 # Android Template
 
-> Just made a android template for website.    
+> Android like one-page template.  
 
 ## Preview : http://cdpn.io/qKEzs and another http://cdpn.io/bDGyn
