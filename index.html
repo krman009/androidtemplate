@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
   <meta charset="UTF-8">
-
   <title>Android template</title>
-
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
   <div id="stbar">
     <div class="crt">
       Android OS Template
@@ -20,19 +14,19 @@
     <div id="clock">
       <span id="liveclock"></span>
     </div>
-   <div class="pc"><img src="http://3.bp.blogspot.com/-X6fADEZ5Coo/UPLhbQdA20I/AAAAAAAAAQQ/pUKZ20mxT08/s320/bookarcpro_desktop_gallerymain.jpg" height=29px title="Macbook(desktop)" /></div>
-  <div id="abt"><a href="https://facebook.com/krmandaliya" target="_blank">About</a></div>
+    <div class="pc"><img src="http://3.bp.blogspot.com/-X6fADEZ5Coo/UPLhbQdA20I/AAAAAAAAAQQ/pUKZ20mxT08/s320/bookarcpro_desktop_gallerymain.jpg" height=29px title="Macbook(desktop)" /></div>
+    <div id="abt"><a href="https://facebook.com/krmandaliya" target="_blank">About</a></div>
     <div id="abt"><a href="https://facebook.com/krmandaliya" target="_blank">Kaushalya Mandaliya</a></div>
   </div>
 <div class="menu">
   <ul>
-<center>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">New posts</a></li>
-    <li><a href="#">Our store</a></li>
-    <li><a href="#">About us</a></li>
-    <li><a href="#">Contact us</a></li>
-</center>
+    <center>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New posts</a></li>
+      <li><a href="#">Our store</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact us</a></li>
+  </center>
   </ul>
 </div>
 <div class="btwin" align="center">
@@ -105,51 +99,47 @@
 </div>
 <script language="JavaScript">
  <!--
-
 /*
 Upper Corner Live clock script credit: JavaScript Kit (www.javascriptkit.com
 More free scripts here!
 */
-
+ 
 function show5(){
-if (!document.layers&&!document.all&&!document.getElementById)
-return
+  if (!document.layers&&!document.all&&!document.getElementById)
+    return
 
- var Digital=new Date()
- var hours=Digital.getHours()
- var minutes=Digital.getMinutes()
- var seconds=Digital.getSeconds()
+  var Digital=new Date()
+  var hours=Digital.getHours()
+  var minutes=Digital.getMinutes()
+  var seconds=Digital.getSeconds()
 
 var dn="PM"
 if (hours<12)
-dn="AM"
+  dn="AM"
 if (hours>12)
-hours=hours-12
+  hours=hours-12
 if (hours==0)
-hours=12
+  hours=12
 
  if (minutes<=9)
- minutes="0"+minutes
+  minutes="0"+minutes
  if (seconds<=9)
- seconds="0"+seconds
+  seconds="0"+seconds
 //change font size here to your desire
-myclock="<b>"+hours+":"+minutes+":"
- +seconds+" "+dn+"</b>"
+myclock="<b>"+hours+":"+minutes+":"+seconds+" "+dn+"</b>"
 if (document.layers){
-document.layers.liveclock.document.write(myclock)
-document.layers.liveclock.document.close()
+  document.layers.liveclock.document.write(myclock)
+  document.layers.liveclock.document.close()
 }
 else if (document.all)
-liveclock.innerHTML=myclock
-else if (document.getElementById)
+  liveclock.innerHTML=myclock
+  else if (document.getElementById)
 document.getElementById("liveclock").innerHTML=myclock
-setTimeout("show5()",1000)
+  setTimeout("show5()",1000)
  }
 
 window.onload=show5
  //-->
 </script>
-
 </body>
-
 </html>
